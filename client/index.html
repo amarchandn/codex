@@ -4,9 +4,64 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/Logo_text.svg" />
-  <link href="./style.css" />
+  <link rel="stylesheet" href="styles.css">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cambridge Technology</title>
+
+  <style>
+    .chat-container{background: #343541;}
+    .profile { width: 32px;height: 32px;
+        background: #4c4d56;
+        border-radius: 4px;
+        box-shadow: 0 2px 28px 0 rgb(0 0 0 / 9%);color:#fff;
+        padding: 6px;
+        text-align: center;
+    }
+    .wrapper.false {
+        background: #4c4d5647;
+        padding: 10px;
+    }
+    .wrapper.ai{  padding: 10px;}
+    .message {
+        /* color: #727683;    */
+        color: #ffffff;
+         padding-left: 15px;
+    }
+    .false .message  {
+        color: #d2bf84;
+    }
+    textarea:focus {
+        border: none;
+    }
+    textarea{    border: 1px solid #4c4d56;
+        padding: 10px;
+        border-radius: 4px;}
+    
+        form {
+        background: #000;
+        padding: 10px;
+        vertical-align: middle;
+        position: relative;
+    }
+        button{  padding: 8px 35px;
+        background-color: #F37435;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 4px;
+        margin-top: -12px;
+        position: absolute;
+        top: 24px;
+        right: 28%;
+        border: 2px solid #F37435;}
+
+        .img-container {
+          height: 35px;
+          width: 30px;
+        }
+      </style>
+
 </head>
 
 <body>
@@ -14,7 +69,7 @@
      <div>
       <img src="./assets/Logo_text.svg" alt="Cambridge Technology" >
      </div>
-    <div id="chat_container" class="chat-container" style="height: 200px;overflow: auto;">
+    <div id="chat_container" class="chat-container" style="height: 400px;overflow: auto;">
     </div>
 
     <form>

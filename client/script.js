@@ -45,7 +45,7 @@ function chartStripe(isAi, value, unqueId) {
     <div class="wrapper ${isAi && 'ai'}">
       <div class="chat" style="display:inline-flex">
         <div class="profile">
-          <img style="height:50px;width:50px"  class="img-container"
+          <img   class="img-container"
           src="${isAi ? ctepl : user}"
           alt="${isAi ? ctepl : user}"
           />
@@ -70,8 +70,9 @@ const handleSubmit = async (e) => {
   const messageDiv = document.getElementById(uniqueId);
   debugger;
   loader(messageDiv);
-
-  const response = await fetch('http://localhost:5000', {
+  // http://localhost:5000
+  // https://codex-yoxh.onrender.com/
+  const response = await fetch('https://codex-yoxh.onrender.com/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
