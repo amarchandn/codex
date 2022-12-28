@@ -1,0 +1,12 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.chat-container {
+  height: 200px !important;
+  overflow: auto !important;
+}
+
+.img-container {
+  height: 50px !important;
+  width: 50px !important;
+}
